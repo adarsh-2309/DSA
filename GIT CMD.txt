@@ -1,0 +1,13 @@
+GIT CMD:
+git log --- to check the log commit history 
+git config user.name "" -----author name 
+git config user.email 
+git clone -----link setup ---git clone https://github.com/adarsh-2309/DSA.git
+git fetch ------give difference local branch and rmote  
+git status ----changes in local
+git add ----  . means whole directory  add (space) .
+		or give relative path of file to add
+git commit -m " statement in short"
+git push origin main(branch name)
+git pull  ---------->it will pull whole branch
+
