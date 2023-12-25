@@ -1,0 +1,23 @@
+class Solution {
+public:
+    vector<string> removeAnagrams(vector<string>& words) {
+       string word=words[0];                           //given array is already sorted by all anagram consecutively so take first array as 								referece  so until we are not getting different string words and replace it 								with that
+       vector<string> res;
+       if(words.size()==0)return res;
+       res.push_back(word);
+       sort(word.begin(),word.end());
+       for(int i=1;i<words.size();i++){
+           string c=words[i];
+           sort(c.begin(),c.end());
+           if(c==word){
+               continue;
+           }
+           else{
+               res.push_back(words[i]);
+               word=words[i];
+               sort(word.begin(),word.end());
+           }
+        }
+        return res; 
+    }
+};
